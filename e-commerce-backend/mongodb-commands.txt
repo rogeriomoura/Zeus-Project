@@ -1,0 +1,9 @@
+use e-commerce => set up your database.
+db.<collection name>.insert([{
+    name: 'some name',
+    price: 'some price',
+    ...
+}]) => insert an array of JSON objects into the collection
+db.<collection name>.find({}).pretty() => show all entries inside the collection
+db.<collection name>.find({ name: 'matching name' }).pretty() => show all entries inside the collection that match the name
+"   "   " .findOne({ name: 'matching name' }) => when you are expecting only one item... you don't need .pretty()
